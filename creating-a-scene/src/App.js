@@ -12,7 +12,7 @@ function App() {
     const scene = new THREE.Scene();
 
     // Creating a camera
-    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
     // Creating a renderer and passing the canvas as an argument
     const renderer = new THREE.WebGLRenderer({ canvas });
@@ -20,8 +20,8 @@ function App() {
 
     // Creating cube mesh object
     const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    const cube = new THREE.Mesh( geometry, material );
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
 
     // Add cube mesh to scene
     scene.add( cube );
@@ -37,14 +37,14 @@ function App() {
         cube.rotation.x += 0.01;
         cube.rotation.y += 0.01;
 
-        renderer.render( scene, camera );
+        renderer.render(scene, camera);
     };
 
     animate();
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <canvas className="webgl"></canvas>
     </div>
   );
