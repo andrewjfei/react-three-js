@@ -1,6 +1,6 @@
 # Running Creating A Scene
 
-1. Make sure you have installed the Three.js library into your project. Run `npm i three` to install the library if you do not have it installed.
+1. Execute `npm i` to install all the depedencies for this example. The most important depdency is the Three.js library which can be installed into your own projects by running `npm i three`.
 
 2. Execute `npm start` to run the example on your local machine.
 
